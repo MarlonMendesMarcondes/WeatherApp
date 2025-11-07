@@ -17,8 +17,8 @@ import java.util.List;
  */
 public class CityAdapter extends RecyclerView.Adapter<CityAdapter.CityViewHolder> {
 
-    private List<String> cities;
-    private OnCityClickListener listener;
+    private final List<String> cities;
+    private final OnCityClickListener listener;
 
     /**
      * Interface para cliques em cidades
