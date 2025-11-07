@@ -73,6 +73,7 @@ public class WeatherFragment extends Fragment {
         txtCurrentDetails = view.findViewById(R.id.txtCurrentDetails);
         fabScanQR = view.findViewById(R.id.fabScanQR);
 
+        recyclerView = view.findViewById(R.id.recyclerViewWeather);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         adapter = new WeatherAdapter(new ArrayList<>());
         recyclerView.setAdapter(adapter);

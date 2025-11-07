@@ -4,4 +4,14 @@
     <string name="app_logo">Your App Logo Text</string>
     <string name="scan_qr_code">Scan QR Code</string>
 
+    <!-- QR Code -->
+    <string name="scan_qr_hint">Escaneie o QR Code com o nome da cidade</string>
+    <string name="scan_cancelled">Scan cancelado</string>
+    <string name="city_changed">Cidade alterada para: %s</string>
+
+    <!-- City Search -->
+    <string name="city_icon">Ícone de cidade</string>
+    <string name="select_city">Selecionar</string>
+    <string name="default_city">São Paulo</string>
+    <string name="search_city">Buscar Cidade</string>
 </resources>
