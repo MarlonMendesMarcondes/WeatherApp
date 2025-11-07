@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="profile_photo">Profile Photo</string>
+    <string name="app_logo">Your App Logo Text</string>
+    <string name="scan_qr_code">Scan QR Code</string>
+
+</resources>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <!-- Coluna da esquerda - Data e dia da semana -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtWeekday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Segunda-feira"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="01/01"
+                android:textSize="14sp"
+                android:textColor="@android:color/darker_gray"
+                android:layout_marginTop="4dp" />
+
+        </LinearLayout>
+
+        <!-- Coluna do meio - Temperaturas -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp">
+
+            <TextView
+                android:id="@+id/txtMaxMin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="28°C / 18°C"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black" />
+
+        </LinearLayout>
+
+        <!-- Coluna da direita - Condições -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:orientation="vertical"
+            android:gravity="end">
+
+            <TextView
+                android:id="@+id/txtCondition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ensolarado"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textAlignment="textEnd" />
+
+            <TextView
+                android:id="@+id/txtRainProbability"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chuva: 10%"
+                android:textSize="12sp"
+                android:textColor="@android:color/darker_gray"
+                android:layout_marginTop="4dp"
+                android:textAlignment="textEnd" />
+
+            <TextView
+                android:id="@+id/txtWind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vento: 15 km/h"
+                android:textSize="12sp"
+                android:textColor="@android:color/darker_gray"
+                android:layout_marginTop="2dp"
+                android:textAlignment="textEnd" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
